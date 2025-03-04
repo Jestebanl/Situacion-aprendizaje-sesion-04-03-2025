@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiServiceService {
 
-  private endpoint:string="https://fakestoreapiserver.reactbd.com/photos";
+  private endpoint:string="https://fakestoreapiserver.reactbd.com/posts";
 
   constructor(private http:HttpClient) { }
 
