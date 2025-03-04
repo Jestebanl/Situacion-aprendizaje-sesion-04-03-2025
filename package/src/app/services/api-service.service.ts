@@ -12,6 +12,6 @@ export class ApiServiceService {
   constructor(private http:HttpClient) { }
 
   public getDatos():Observable<any[]>{
-    return this.http.get<any[]>(this.endpoint); //select
+    return this.http.get<any[]>(this.endpoint);
   }
 }
