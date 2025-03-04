@@ -15,7 +15,7 @@ export class ApiServiceService {
     return this.http.get<any[]>(this.endpoint).pipe(
       catchError(error => {
         console.error('Error occurred:', error);
-        return throwError(() => new Error('Error fetching data from the server'));
+        return throwError(() => new Error('Error en la conexión a la API'));
       })
     );
   }
