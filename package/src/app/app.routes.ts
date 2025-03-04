@@ -24,8 +24,11 @@ export const routes: Routes = [
       },
       {
         path: 'api',
-        loadComponent: () =>
-          import('./pages/api-page/api-page.component').then((m) => m.ApiPageComponent),
+        loadComponent() {
+          return import('./pages/api-page/api-page.component').then(
+            (m) => m.default
+          );
+        },
       },
       {
         path: 'ui-components',

@@ -7,13 +7,7 @@ import { AppBlogComponent } from 'src/app/components/apps-blog/apps-blog.compone
 
 @Component({
   selector: 'app-api-page',
-  imports: [
-    MaterialModule,
-    AppSalesOverviewComponent,
-    AppDailyActivitiesComponent,
-    AppProductPerformanceComponent,
-    AppBlogComponent
-  ],
+  imports: [],
   templateUrl: './api-page.component.html',
   styleUrl: './api-page.component.scss',
   encapsulation: ViewEncapsulation.None,
